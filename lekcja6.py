@@ -17,13 +17,11 @@ a - A ppend (dopisywanie)
 
 rozszerzenie to tylko 'tekst' nadawany po to, aby inne programy rozpoznawały plik w odpowiedni dla tych programów sposób
 
-read
-readline
-readlines
-
-splitlines
+tell - mówi, gdzie skończyliśmy ostatnia operacje na pliku
+seek - szuka (zmienia) - na miejsce wskazane przez nas
 """
 
-with open("test.txt","r",encoding="UTF-8") as file:
-    for line in file:
-        print(line)
+with open("test.txt","a+",encoding="UTF-8") as file:
+    file.write("Test")
+    file.seek
+    print(file.tell())
