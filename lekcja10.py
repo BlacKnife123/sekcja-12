@@ -1,8 +1,8 @@
 def readFile(plik, slowo):
     try:
         with open(plik,"r",encoding="UTF-8") as file:
-            for line in file:
-                wordCount = line.count(slowo)
+            file.read()
+            wordCount = line.count(slowo)
 
             print(f"Słowo {slowo} w pliku {plik} wystąpilo: {wordCount}")
 
